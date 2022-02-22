@@ -19,6 +19,7 @@ class _InputPageState extends State<InputPage> {
   // bool _value = true;
   double _currentSliderValue = 20;
   int weight = 50;
+  int age = 30;
 
   @override
   Widget build(BuildContext context) {
