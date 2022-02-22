@@ -18,6 +18,7 @@ class _InputPageState extends State<InputPage> {
   // double value = 10;
   // bool _value = true;
   double _currentSliderValue = 20;
+  int weight = 50;
 
   @override
   Widget build(BuildContext context) {
@@ -186,11 +187,12 @@ class _InputPageState extends State<InputPage> {
                   child: Container(
                     child: Column(
                       children: const [
-                        Text("WEIGHT",
-                         style: TextStyle(
-                                color: Colors.white,
-                                fontSize: 21,
-                              ),
+                        Text(
+                          "WEIGHT",
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 21,
+                          ),
                         ),
                       ],
                     ),
@@ -205,11 +207,12 @@ class _InputPageState extends State<InputPage> {
                   child: Container(
                     child: Column(
                       children: const [
-                        Text("AGE",
-                         style: TextStyle(
-                                color: Colors.white,
-                                fontSize: 21,
-                              ),
+                        Text(
+                          "AGE",
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 21,
+                          ),
                         ),
                       ],
                     ),
