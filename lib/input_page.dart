@@ -184,6 +184,16 @@ class _InputPageState extends State<InputPage> {
               children: [
                 Expanded(
                   child: Container(
+                    child: Column(
+                      children: const [
+                        Text("WEIGHT",
+                         style: TextStyle(
+                                color: Colors.white,
+                                fontSize: 21,
+                              ),
+                        ),
+                      ],
+                    ),
                     margin: const EdgeInsets.all(10),
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(10),
@@ -193,6 +203,16 @@ class _InputPageState extends State<InputPage> {
                 ),
                 Expanded(
                   child: Container(
+                    child: Column(
+                      children: const [
+                        Text("AGE",
+                         style: TextStyle(
+                                color: Colors.white,
+                                fontSize: 21,
+                              ),
+                        ),
+                      ],
+                    ),
                     margin: const EdgeInsets.all(10),
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(10),
