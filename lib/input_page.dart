@@ -314,17 +314,20 @@ class _InputPageState extends State<InputPage> {
               ],
             ),
           ),
-          Container(
-            color: Colors.blue,
-            width: double.infinity,
-            height: 80,
-            child: const Center(
-              child: Text(
-                "CALCULATE",
-                style: TextStyle(
-                  fontWeight: FontWeight.bold,
-                  color: Colors.white,
-                  fontSize: 26,
+          GestureDetector(
+            onTap: () {},
+            child: Container(
+              color: Colors.blue,
+              width: double.infinity,
+              height: 80,
+              child: const Center(
+                child: Text(
+                  "CALCULATE",
+                  style: TextStyle(
+                    fontWeight: FontWeight.bold,
+                    color: Colors.white,
+                    fontSize: 26,
+                  ),
                 ),
               ),
             ),
