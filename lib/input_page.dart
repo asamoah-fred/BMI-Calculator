@@ -203,13 +203,17 @@ class _InputPageState extends State<InputPage> {
                             fontWeight: FontWeight.bold,
                           ),
                         ),
-                        CircleAvatar(
-                          backgroundColor: Colors.white,
-                          radius: 30,
-                          child: Icon(
-                            FontAwesomeIcons.plus,
-                            color: Colors.lightBlue,
-                          ),
+                        Row(
+                          children: const [
+                            CircleAvatar(
+                              backgroundColor: Colors.white,
+                              radius: 30,
+                              child: Icon(
+                                FontAwesomeIcons.plus,
+                                color: Colors.lightBlue,
+                              ),
+                            ),
+                          ],
                         ),
                       ],
                     ),
