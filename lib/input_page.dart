@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'enum_file.dart';
 
 class InputPage extends StatefulWidget {
   const InputPage({Key? key}) : super(key: key);
@@ -8,6 +10,7 @@ class InputPage extends StatefulWidget {
 }
 
 class _InputPageState extends State<InputPage> {
+  Gender? selectedCard;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -23,20 +26,78 @@ class _InputPageState extends State<InputPage> {
             child: Row(
               children: [
                 Expanded(
-                  child: Container(
-                    margin: const EdgeInsets.all(10),
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(10),
-                      color: Colors.lightBlueAccent,
+                  child: GestureDetector(
+                    onTap: () {
+                      setState(() {
+                        selectedCard = Gender.male;
+                      });
+                    },
+                    child: Container(
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: const [
+                          Icon(
+                            FontAwesomeIcons.mars,
+                            color: Colors.white,
+                            size: 100,
+                          ),
+                          SizedBox(
+                            height: 15,
+                          ),
+                          Text(
+                            "MALE",
+                            style: TextStyle(
+                              fontSize: 21,
+                              color: Colors.white,
+                            ),
+                          ),
+                        ],
+                      ),
+                      margin: const EdgeInsets.all(10),
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(10),
+                        color: selectedCard == Gender.male
+                            ? Colors.cyan
+                            : Colors.lightBlueAccent,
+                      ),
                     ),
                   ),
                 ),
                 Expanded(
-                  child: Container(
-                    margin: const EdgeInsets.all(10),
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(10),
-                      color: Colors.lightBlueAccent,
+                  child: GestureDetector(
+                    onTap: () {
+                      setState(() {
+                        selectedCard = Gender.female;
+                      });
+                    },
+                    child: Container(
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: const [
+                          Icon(
+                            FontAwesomeIcons.venus,
+                            color: Colors.white,
+                            size: 100,
+                          ),
+                          SizedBox(
+                            height: 15,
+                          ),
+                          Text(
+                            "FEMAlE",
+                            style: TextStyle(
+                              fontSize: 21,
+                              color: Colors.white,
+                            ),
+                          ),
+                        ],
+                      ),
+                      margin: const EdgeInsets.all(10),
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(10),
+                        color: selectedCard == Gender.female
+                            ? Colors.cyan
+                            : Colors.lightBlueAccent,
+                      ),
                     ),
                   ),
                 ),
