@@ -269,7 +269,11 @@ class _InputPageState extends State<InputPage> {
                           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                           children: [
                             GestureDetector(
-                              onTap: () {},
+                              onTap: () {
+                                setState(() {
+                                  age++;
+                                });
+                              },
                               child: CircleAvatar(
                                 backgroundColor: Colors.white,
                                 radius: 30,
