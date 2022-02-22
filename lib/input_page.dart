@@ -152,7 +152,7 @@ class _InputPageState extends State<InputPage> {
                         Slider(
                           value: _currentSliderValue,
                           // min: 1,
-                          max: 100,
+                          max: 255,
                           divisions: 10,
                           // divisions: 5,
                           label: _currentSliderValue.round().toString(),
