@@ -153,13 +153,15 @@ class _InputPageState extends State<InputPage> {
                           value: _currentSliderValue,
                           // min: 1,
                           max: 255,
-                          divisions: 10,
-                          // divisions: 5,
+                          // divisions: 10,
+                          divisions: 20,
                           label: _currentSliderValue.round().toString(),
                           onChanged: (value) {
-                            setState(() {
-                              _currentSliderValue = value;
-                            });
+                            setState(
+                              () {
+                                _currentSliderValue = value;
+                              },
+                            );
                           },
                         ),
                       ],
