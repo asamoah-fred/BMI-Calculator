@@ -266,12 +266,17 @@ class _InputPageState extends State<InputPage> {
                         Row(
                           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                           children: [
-                            CircleAvatar(
-                              backgroundColor: Colors.white,
-                              radius: 30,
-                              child: Icon(
-                                FontAwesomeIcons.plus,
-                                color: Colors.lightBlue,
+                            GestureDetector(
+                              onTap: () {
+                                
+                              },
+                              child: CircleAvatar(
+                                backgroundColor: Colors.white,
+                                radius: 30,
+                                child: Icon(
+                                  FontAwesomeIcons.plus,
+                                  color: Colors.lightBlue,
+                                ),
                               ),
                             ),
                             GestureDetector(
