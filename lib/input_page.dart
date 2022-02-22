@@ -220,12 +220,17 @@ class _InputPageState extends State<InputPage> {
                                 ),
                               ),
                             ),
-                            CircleAvatar(
-                              backgroundColor: Colors.white,
-                              radius: 30,
-                              child: Icon(
-                                FontAwesomeIcons.minus,
-                                color: Colors.lightBlue,
+                            GestureDetector(
+                              onTap: () {
+                                
+                              },
+                              child: CircleAvatar(
+                                backgroundColor: Colors.white,
+                                radius: 30,
+                                child: Icon(
+                                  FontAwesomeIcons.minus,
+                                  color: Colors.lightBlue,
+                                ),
                               ),
                             ),
                           ],
