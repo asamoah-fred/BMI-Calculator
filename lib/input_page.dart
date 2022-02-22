@@ -119,12 +119,15 @@ class _InputPageState extends State<InputPage> {
                 Expanded(
                   child: Container(
                     child: Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
                       children: [
-                        Text(
-                          "HEIGHT",
-                          style: TextStyle(
-                            color: Colors.white,
-                            fontSize: 21,
+                        SizedBox(
+                          child: Text(
+                            "HEIGHT",
+                            style: TextStyle(
+                              color: Colors.white,
+                              fontSize: 21,
+                            ),
                           ),
                         ),
                         Row(
@@ -163,6 +166,7 @@ class _InputPageState extends State<InputPage> {
                               },
                             );
                           },
+                          inactiveColor: Colors.white,
                         ),
                       ],
                     ),
