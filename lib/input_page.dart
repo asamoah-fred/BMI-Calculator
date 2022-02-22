@@ -237,7 +237,7 @@ class _InputPageState extends State<InputPage> {
                 Expanded(
                   child: Container(
                     child: Column(
-                      children:  [
+                      children: [
                         Text(
                           "AGE",
                           style: TextStyle(
@@ -252,6 +252,27 @@ class _InputPageState extends State<InputPage> {
                             color: Colors.white,
                             fontWeight: FontWeight.bold,
                           ),
+                        ),
+                        Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                          children: const [
+                            CircleAvatar(
+                              backgroundColor: Colors.white,
+                              radius: 30,
+                              child: Icon(
+                                FontAwesomeIcons.plus,
+                                color: Colors.lightBlue,
+                              ),
+                            ),
+                            // CircleAvatar(
+                            //   backgroundColor: Colors.white,
+                            //   radius: 30,
+                            //   child: Icon(
+                            //     FontAwesomeIcons.minus,
+                            //     color: Colors.lightBlue,
+                            //   ),
+                            // ),
+                          ],
                         ),
                       ],
                     ),
