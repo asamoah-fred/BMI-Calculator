@@ -215,7 +215,7 @@ class _InputPageState extends State<InputPage> {
                               },
                               child: CircleAvatar(
                                 backgroundColor: Colors.white,
-                                radius: 30,
+                                radius: 25,
                                 child: Icon(
                                   FontAwesomeIcons.plus,
                                   color: Colors.lightBlue,
@@ -230,7 +230,7 @@ class _InputPageState extends State<InputPage> {
                               },
                               child: CircleAvatar(
                                 backgroundColor: Colors.white,
-                                radius: 30,
+                                radius: 25,
                                 child: Icon(
                                   FontAwesomeIcons.minus,
                                   color: Colors.lightBlue,
@@ -278,7 +278,7 @@ class _InputPageState extends State<InputPage> {
                               },
                               child: CircleAvatar(
                                 backgroundColor: Colors.white,
-                                radius: 30,
+                                radius: 25,
                                 child: Icon(
                                   FontAwesomeIcons.plus,
                                   color: Colors.lightBlue,
@@ -293,7 +293,7 @@ class _InputPageState extends State<InputPage> {
                               },
                               child: CircleAvatar(
                                 backgroundColor: Colors.white,
-                                radius: 30,
+                                radius: 25,
                                 child: Icon(
                                   FontAwesomeIcons.minus,
                                   color: Colors.lightBlue,
