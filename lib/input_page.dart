@@ -200,6 +200,7 @@ class _InputPageState extends State<InputPage> {
                           style: TextStyle(
                             fontSize: 70,
                             color: Colors.white,
+                            fontWeight: FontWeight.bold,
                           ),
                         ),
                       ],
