@@ -18,7 +18,7 @@ class _InputPageState extends State<InputPage> {
   // int? sliderValue;
   // double value = 10;
   // bool _value = true;
-  double _currentSliderValue = 20;
+  int _currentSliderValue = 180;
   int weight = 50;
   int age = 30;
 
@@ -155,16 +155,16 @@ class _InputPageState extends State<InputPage> {
                           ],
                         ),
                         Slider(
-                          value: _currentSliderValue,
-                          // min: 1,
-                          max: 255,
+                          value: _currentSliderValue.toDouble(),
+                          min: 10.0,
+                          max: 255.0,
                           // divisions: 10,
-                          divisions: 20,
-                          label: _currentSliderValue.round().toString(),
+                          // divisions: 20,
+                          // label: _currentSliderValue.round().toString(),
                           onChanged: (value) {
                             setState(
                               () {
-                                _currentSliderValue = value;
+                                _currentSliderValue = value.toInt();
                               },
                             );
                           },
@@ -322,9 +322,9 @@ class _InputPageState extends State<InputPage> {
                 context,
                 MaterialPageRoute(
                   builder: (context) => ResultsPage(
-                    height: 130,
-                    weight: 50,
-                    age: 30,
+                    height: _currentSliderValue,
+                    weight: weight,
+                    age: age,
                   ),
                 ),
               );

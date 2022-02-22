@@ -1,21 +1,29 @@
+// ignore_for_file: unnecessary_string_interpolations
+
 import 'package:flutter/material.dart';
 import 'package:bmi_calculator/formula.dart';
 
 class ResultsPage extends StatefulWidget {
-  int? weight;
-  int? height;
-  int? age;
+  int weight;
+  int height;
+  int age;
   ResultsPage(
-      {Key? key,
-      @required this.height,
-      @required this.weight,
-      @required this.age})
+      {Key? key, required this.height, required this.weight, required this.age})
       : super(key: key);
   @override
   _ResultsPageState createState() => _ResultsPageState();
 }
 
 class _ResultsPageState extends State<ResultsPage> {
+  Logic logic = Logic();
+  double bmiResult = 0;
+
+  @override
+  void initState() {
+    bmiResult = logic.calculateBMI(widget.height, widget.weight);
+    super.initState();
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -25,16 +33,25 @@ class _ResultsPageState extends State<ResultsPage> {
         ),
         centerTitle: true,
       ),
-      body: Column(
-        children: [
-          const Text(
-            "BMI Result",
-            style: TextStyle(
-              fontSize: 35,
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            const Text(
+              "BMI Result",
+              style: TextStyle(
+                fontSize: 35,
+              ),
             ),
-          ),
-          Text('$Logic().calculateBMI()'),
-        ],
+            Text(
+              '${bmiResult.toStringAsFixed(1)}',
+              style: const TextStyle(
+                fontSize: 70,
+                color: Colors.blue,
+              ),
+            ),
+          ],
+        ),
       ),
     );
   }
