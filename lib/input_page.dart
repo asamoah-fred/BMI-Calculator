@@ -121,13 +121,11 @@ class _InputPageState extends State<InputPage> {
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
-                        SizedBox(
-                          child: Text(
-                            "HEIGHT",
-                            style: TextStyle(
-                              color: Colors.white,
-                              fontSize: 21,
-                            ),
+                        Text(
+                          "HEIGHT",
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 21,
                           ),
                         ),
                         Row(
