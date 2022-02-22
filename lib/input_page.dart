@@ -204,6 +204,7 @@ class _InputPageState extends State<InputPage> {
                           ),
                         ),
                         Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                           children: const [
                             CircleAvatar(
                               backgroundColor: Colors.white,
