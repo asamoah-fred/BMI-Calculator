@@ -265,7 +265,7 @@ class _InputPageState extends State<InputPage> {
                         ),
                         Row(
                           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                          children: const [
+                          children: [
                             CircleAvatar(
                               backgroundColor: Colors.white,
                               radius: 30,
@@ -274,12 +274,17 @@ class _InputPageState extends State<InputPage> {
                                 color: Colors.lightBlue,
                               ),
                             ),
-                            CircleAvatar(
-                              backgroundColor: Colors.white,
-                              radius: 30,
-                              child: Icon(
-                                FontAwesomeIcons.minus,
-                                color: Colors.lightBlue,
+                            GestureDetector(
+                              onTap: () {
+                                
+                              },
+                              child: CircleAvatar(
+                                backgroundColor: Colors.white,
+                                radius: 30,
+                                child: Icon(
+                                  FontAwesomeIcons.minus,
+                                  color: Colors.lightBlue,
+                                ),
                               ),
                             ),
                           ],
