@@ -213,6 +213,14 @@ class _InputPageState extends State<InputPage> {
                                 color: Colors.lightBlue,
                               ),
                             ),
+                            CircleAvatar(
+                              backgroundColor: Colors.white,
+                              radius: 30,
+                              child: Icon(
+                                FontAwesomeIcons.minus,
+                                color: Colors.lightBlue,
+                              ),
+                            ),
                           ],
                         ),
                       ],
