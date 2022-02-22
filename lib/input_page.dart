@@ -1,4 +1,7 @@
+// ignore_for_file: prefer_const_constructors
+
 import 'package:flutter/material.dart';
+import 'package:flutter/painting.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'enum_file.dart';
 
@@ -104,11 +107,45 @@ class _InputPageState extends State<InputPage> {
               ],
             ),
           ),
+          // This is the Second Row
           Expanded(
             child: Row(
               children: [
                 Expanded(
                   child: Container(
+                    child: Column(
+                      children: [
+                        const Text(
+                          "HEIGHT",
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 21,
+                          ),
+                        ),
+                        Row(
+                          crossAxisAlignment: CrossAxisAlignment.baseline,
+                          textBaseline: TextBaseline.alphabetic,
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: const [
+                            Text(
+                              "180",
+                              style: TextStyle(
+                                color: Colors.white,
+                                fontSize: 75,
+                                fontWeight: FontWeight.bold,
+                              ),
+                            ),
+                            Text(
+                              "cm",
+                              style: TextStyle(
+                                color: Colors.white,
+                                fontSize: 21,
+                              ),
+                            ),
+                          ],
+                        ),
+                      ],
+                    ),
                     margin: const EdgeInsets.all(10),
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(10),
