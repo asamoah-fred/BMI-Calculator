@@ -221,7 +221,9 @@ class _InputPageState extends State<InputPage> {
                               ),
                             ),
                             GestureDetector(
-                              onTap: () {},
+                              onTap: () {
+                                weight--;
+                              },
                               child: CircleAvatar(
                                 backgroundColor: Colors.white,
                                 radius: 30,
