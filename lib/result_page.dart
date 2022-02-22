@@ -17,6 +17,16 @@ class _ResultPageState extends State<ResultPage> {
         ),
         centerTitle: true,
       ),
+      body: Column(
+        children: const [
+          Text(
+            "BMI Result",
+            style: TextStyle(
+              fontSize: 35,
+            ),
+          ),
+        ],
+      ),
     );
   }
 }
