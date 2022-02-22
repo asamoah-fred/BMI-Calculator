@@ -206,10 +206,10 @@ class _InputPageState extends State<InputPage> {
                         ),
                         Row(
                           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                          children:  [
+                          children: [
                             GestureDetector(
                               onTap: () {
-                                
+                                weight++;
                               },
                               child: CircleAvatar(
                                 backgroundColor: Colors.white,
@@ -221,9 +221,7 @@ class _InputPageState extends State<InputPage> {
                               ),
                             ),
                             GestureDetector(
-                              onTap: () {
-                                
-                              },
+                              onTap: () {},
                               child: CircleAvatar(
                                 backgroundColor: Colors.white,
                                 radius: 30,
@@ -267,9 +265,7 @@ class _InputPageState extends State<InputPage> {
                           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                           children: [
                             GestureDetector(
-                              onTap: () {
-                                
-                              },
+                              onTap: () {},
                               child: CircleAvatar(
                                 backgroundColor: Colors.white,
                                 radius: 30,
@@ -280,9 +276,7 @@ class _InputPageState extends State<InputPage> {
                               ),
                             ),
                             GestureDetector(
-                              onTap: () {
-                                
-                              },
+                              onTap: () {},
                               child: CircleAvatar(
                                 backgroundColor: Colors.white,
                                 radius: 30,
