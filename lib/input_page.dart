@@ -187,12 +187,19 @@ class _InputPageState extends State<InputPage> {
                 Expanded(
                   child: Container(
                     child: Column(
-                      children: const [
+                      children: [
                         Text(
                           "WEIGHT",
                           style: TextStyle(
                             color: Colors.white,
                             fontSize: 21,
+                          ),
+                        ),
+                        Text(
+                          '$weight',
+                          style: TextStyle(
+                            fontSize: 70,
+                            color: Colors.white,
                           ),
                         ),
                       ],
