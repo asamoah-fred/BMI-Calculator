@@ -203,6 +203,9 @@ class _InputPageState extends State<InputPage> {
                             fontWeight: FontWeight.bold,
                           ),
                         ),
+                        CircleAvatar(
+                          backgroundColor: Colors.white,radius: 30,
+                        ),
                       ],
                     ),
                     margin: const EdgeInsets.all(10),
