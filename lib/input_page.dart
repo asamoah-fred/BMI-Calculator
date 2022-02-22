@@ -1,6 +1,6 @@
 // ignore_for_file: prefer_const_constructors
 
-import 'package:bmi_calculator/result_page.dart';
+import 'package:bmi_calculator/results_page.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/painting.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
@@ -30,6 +30,7 @@ class _InputPageState extends State<InputPage> {
           "BMI CALCULATOR",
         ),
         centerTitle: true,
+        // elevation: 0,
       ),
       body: Column(
         children: [
@@ -319,7 +320,7 @@ class _InputPageState extends State<InputPage> {
             onTap: () {
               Navigator.push(
                 context,
-                MaterialPageRoute(builder: (context) => ResultPage()),
+                MaterialPageRoute(builder: (context) => ResultsPage()),
               );
             },
             child: Container(

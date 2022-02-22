@@ -1,13 +1,20 @@
 import 'package:flutter/material.dart';
 
-class ResultPage extends StatefulWidget {
-  const ResultPage({Key? key}) : super(key: key);
-
+class ResultsPage extends StatefulWidget {
+  int? weight;
+  int? height;
+  int? age;
+  ResultsPage(
+      {Key? key,
+      @required this.height,
+      @required this.weight,
+      @required this.age})
+      : super(key: key);
   @override
-  _ResultPageState createState() => _ResultPageState();
+  _ResultsPageState createState() => _ResultsPageState();
 }
 
-class _ResultPageState extends State<ResultPage> {
+class _ResultsPageState extends State<ResultsPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
