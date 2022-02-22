@@ -14,6 +14,11 @@ class InputPage extends StatefulWidget {
 
 class _InputPageState extends State<InputPage> {
   Gender? selectedCard;
+  // int? sliderValue;
+  // double value = 10;
+  // bool _value = true;
+  double _currentSliderValue = 20;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -115,7 +120,7 @@ class _InputPageState extends State<InputPage> {
                   child: Container(
                     child: Column(
                       children: [
-                        const Text(
+                        Text(
                           "HEIGHT",
                           style: TextStyle(
                             color: Colors.white,
@@ -126,9 +131,9 @@ class _InputPageState extends State<InputPage> {
                           crossAxisAlignment: CrossAxisAlignment.baseline,
                           textBaseline: TextBaseline.alphabetic,
                           mainAxisAlignment: MainAxisAlignment.center,
-                          children: const [
+                          children: [
                             Text(
-                              "180",
+                              _currentSliderValue.toString(),
                               style: TextStyle(
                                 color: Colors.white,
                                 fontSize: 75,
@@ -143,6 +148,19 @@ class _InputPageState extends State<InputPage> {
                               ),
                             ),
                           ],
+                        ),
+                        Slider(
+                          value: _currentSliderValue,
+                          // min: 1,
+                          max: 100,
+                          divisions: 10,
+                          // divisions: 5,
+                          label: _currentSliderValue.round().toString(),
+                          onChanged: (value) {
+                            setState(() {
+                              _currentSliderValue = value;
+                            });
+                          },
                         ),
                       ],
                     ),
