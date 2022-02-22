@@ -187,6 +187,7 @@ class _InputPageState extends State<InputPage> {
                 Expanded(
                   child: Container(
                     child: Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         Text(
                           "WEIGHT",
