@@ -44,6 +44,7 @@ class _ResultsPageState extends State<ResultsPage> {
               "BMI Result",
               style: TextStyle(
                 fontSize: 35,
+                color: Colors.white,
               ),
             ),
             Text(
