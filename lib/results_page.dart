@@ -1,4 +1,4 @@
-// ignore_for_file: unnecessary_string_interpolations
+// ignore_for_file: unnecessary_string_interpolations, must_be_immutable
 
 import 'package:flutter/material.dart';
 import 'package:bmi_calculator/formula.dart';
@@ -28,7 +28,7 @@ class _ResultsPageState extends State<ResultsPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Color.fromRGBO(0, 10, 0, 10),
+        backgroundColor: const Color.fromRGBO(0, 10, 0, 10),
         title: const Text(
           "BMI CALCULATOR",
         ),
