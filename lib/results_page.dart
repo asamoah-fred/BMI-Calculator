@@ -28,11 +28,14 @@ class _ResultsPageState extends State<ResultsPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        backgroundColor: Color.fromRGBO(0, 10, 0, 10),
         title: const Text(
           "BMI CALCULATOR",
         ),
         centerTitle: true,
+        elevation: 0,
       ),
+      backgroundColor: Colors.black,
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
