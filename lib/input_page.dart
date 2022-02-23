@@ -159,7 +159,7 @@ class _InputPageState extends State<InputPage> {
                         ),
                         Slider(
                           value: _currentSliderValue.toDouble(),
-                          min: 10.0,
+                          min: 0.0,
                           max: 255.0,
                           // divisions: 10,
                           // divisions: 20,
