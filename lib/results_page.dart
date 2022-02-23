@@ -50,7 +50,7 @@ class _ResultsPageState extends State<ResultsPage> {
               '${bmiResult.toStringAsFixed(1)}',
               style: const TextStyle(
                 fontSize: 70,
-                color: Colors.blue,
+                color: Colors.white,
               ),
             ),
           ],
