@@ -26,12 +26,15 @@ class _InputPageState extends State<InputPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        backgroundColor: Color.fromRGBO(0, 10, 0, 10),
         title: const Text(
           "BMI CALCULATOR",
         ),
         centerTitle: true,
-        // elevation: 0,
+        elevation: 0,
       ),
+      // backgroundColor: Color.fromRGBO(0, 90, 0, 90),
+      backgroundColor: Colors.black,
       body: Column(
         children: [
           Expanded(
@@ -70,7 +73,7 @@ class _InputPageState extends State<InputPage> {
                         borderRadius: BorderRadius.circular(10),
                         color: selectedCard == Gender.male
                             ? Colors.cyan
-                            : Colors.lightBlueAccent,
+                            : Color.fromRGBO(0, 10, 0, 10),
                       ),
                     ),
                   ),
@@ -108,7 +111,7 @@ class _InputPageState extends State<InputPage> {
                         borderRadius: BorderRadius.circular(10),
                         color: selectedCard == Gender.female
                             ? Colors.cyan
-                            : Colors.lightBlueAccent,
+                            : Color.fromRGBO(0, 10, 0, 10),
                       ),
                     ),
                   ),
@@ -175,7 +178,7 @@ class _InputPageState extends State<InputPage> {
                     margin: const EdgeInsets.all(10),
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(10),
-                      color: Colors.lightBlueAccent,
+                      color: Color.fromRGBO(0, 10, 0, 10),
                     ),
                   ),
                 ),
@@ -220,7 +223,7 @@ class _InputPageState extends State<InputPage> {
                                 radius: 25,
                                 child: Icon(
                                   FontAwesomeIcons.plus,
-                                  color: Colors.lightBlue,
+                                  color: Color.fromRGBO(0, 10, 0, 10),
                                 ),
                               ),
                             ),
@@ -235,7 +238,7 @@ class _InputPageState extends State<InputPage> {
                                 radius: 25,
                                 child: Icon(
                                   FontAwesomeIcons.minus,
-                                  color: Colors.lightBlue,
+                                  color: Color.fromRGBO(0, 10, 0, 10),
                                 ),
                               ),
                             ),
@@ -246,7 +249,7 @@ class _InputPageState extends State<InputPage> {
                     margin: const EdgeInsets.all(10),
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(10),
-                      color: Colors.lightBlueAccent,
+                      color: Color.fromRGBO(0, 10, 0, 10),
                     ),
                   ),
                 ),
@@ -283,7 +286,7 @@ class _InputPageState extends State<InputPage> {
                                 radius: 25,
                                 child: Icon(
                                   FontAwesomeIcons.plus,
-                                  color: Colors.lightBlue,
+                                  color: Color.fromRGBO(0, 10, 0, 10),
                                 ),
                               ),
                             ),
@@ -298,7 +301,7 @@ class _InputPageState extends State<InputPage> {
                                 radius: 25,
                                 child: Icon(
                                   FontAwesomeIcons.minus,
-                                  color: Colors.lightBlue,
+                                  color: Color.fromRGBO(0, 10, 0, 10),
                                 ),
                               ),
                             ),
@@ -309,7 +312,7 @@ class _InputPageState extends State<InputPage> {
                     margin: EdgeInsets.all(10),
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(10),
-                      color: Colors.lightBlueAccent,
+                      color: Color.fromRGBO(0, 10, 0, 10),
                     ),
                   ),
                 ),
@@ -330,7 +333,7 @@ class _InputPageState extends State<InputPage> {
               );
             },
             child: Container(
-              color: Colors.blue,
+              color: Color.fromRGBO(0, 10, 0, 10),
               width: double.infinity,
               height: 80,
               child: const Center(
