@@ -16,7 +16,15 @@ class WelcomePage extends StatelessWidget {
       ),
       backgroundColor: Colors.black,
       body: Column(
-        
+        children: [
+          Text(
+            "GET STARTED",
+            style: TextStyle(
+              fontSize: 30,
+              color: Colors.white,
+            ),
+          ),
+        ],
       ),
     );
   }
