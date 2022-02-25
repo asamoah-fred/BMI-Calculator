@@ -98,7 +98,7 @@ class _InputPageState extends State<InputPage> {
                             height: 15,
                           ),
                           Text(
-                            "FEMAlE",
+                            "FEMALE",
                             style: TextStyle(
                               fontSize: 21,
                               color: Colors.white,
@@ -159,7 +159,7 @@ class _InputPageState extends State<InputPage> {
                         ),
                         Slider(
                           value: _currentSliderValue.toDouble(),
-                          min: 0.0,
+                          min: 10,
                           max: 255.0,
                           // divisions: 10,
                           // divisions: 20,
@@ -256,6 +256,7 @@ class _InputPageState extends State<InputPage> {
                 Expanded(
                   child: Container(
                     child: Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         Text(
                           "AGE",
