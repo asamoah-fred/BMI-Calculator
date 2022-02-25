@@ -1,3 +1,4 @@
+import 'package:bmi_calculator/input_page.dart';
 import 'package:flutter/material.dart';
 
 class WelcomePage extends StatelessWidget {
@@ -18,18 +19,31 @@ class WelcomePage extends StatelessWidget {
       body: Column(
         children: [
           SizedBox(
-            height: 100,
+            height: 550,
           ),
-          Center(
-            child: Container(
-              height: 50,
-              width: 200,
-              color: Colors.white,
-              child: Text(
-                "GET STARTED",
-                style: TextStyle(
-                  fontSize: 30,
-                  color: Colors.green,
+          GestureDetector(
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => InputPage(),
+                ),
+              );
+            },
+            child: Center(
+              child: Container(
+                color: Color.fromRGBO(0, 10, 0, 10),
+                width: 200,
+                height: 50,
+                child: const Center(
+                  child: Text(
+                    "GET STARTED",
+                    style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                      color: Colors.white,
+                      fontSize: 26,
+                    ),
+                  ),
                 ),
               ),
             ),
