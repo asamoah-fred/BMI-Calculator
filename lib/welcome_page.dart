@@ -16,39 +16,53 @@ class WelcomePage extends StatelessWidget {
         elevation: 0,
       ),
       backgroundColor: Colors.black,
-      body: Column(
-        children: [
-          SizedBox(
-            height: 550,
-          ),
-          GestureDetector(
-            onTap: () {
-              Navigator.push(
-                context,
-                MaterialPageRoute(
-                  builder: (context) => InputPage(),
+      body: SafeArea(
+        child: SingleChildScrollView(
+          child: Column(
+            children: [
+              SizedBox(
+                height: 250,
+              ),
+              Center(
+                child: Image.asset(
+                  'assets/bm.jpg',
+                  height: 120,
+                  width: 120,
                 ),
-              );
-            },
-            child: Center(
-              child: Container(
-                color: Color.fromRGBO(0, 10, 0, 10),
-                width: 200,
-                height: 50,
-                child: const Center(
-                  child: Text(
-                    "GET STARTED",
-                    style: TextStyle(
-                      fontWeight: FontWeight.bold,
-                      color: Colors.white,
-                      fontSize: 26,
+              ),
+              const SizedBox(
+                height: 200,
+              ),
+              GestureDetector(
+                onTap: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => const InputPage(),
+                    ),
+                  );
+                },
+                child: Center(
+                  child: Container(
+                    color: const Color.fromRGBO(0, 10, 0, 10),
+                    width: 200,
+                    height: 50,
+                    child: const Center(
+                      child: Text(
+                        "GET STARTED",
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                          color: Colors.white,
+                          fontSize: 26,
+                        ),
+                      ),
                     ),
                   ),
                 ),
               ),
-            ),
+            ],
           ),
-        ],
+        ),
       ),
     );
   }
