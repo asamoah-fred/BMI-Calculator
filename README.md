@@ -1,6 +1,17 @@
-# bmi_calculator
+# Simple App to calculate Body Mass Index(BMI)
 
-A new Flutter project.
+## How To Use The App
+First, Select your Gender.
+Second, Choose your Height. 
+Third, Choose your Weight. 
+Last but not the Least, Choose your Age.
+finaly, Click on the Calculate Button to get your BMI Results.
+
+To get your actual #BMI Results, please select your #Age, #Height and #Weight correctly
+
+
+# Where To Get The App!
+
 
 ## Getting Started
 
