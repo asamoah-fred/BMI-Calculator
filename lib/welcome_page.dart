@@ -17,12 +17,20 @@ class WelcomePage extends StatelessWidget {
       backgroundColor: Colors.black,
       body: Column(
         children: [
-          Container(
-            child: Text(
-              "GET STARTED",
-              style: TextStyle(
-                fontSize: 30,
-                color: Colors.white,
+          SizedBox(
+            height: 100,
+          ),
+          Center(
+            child: Container(
+              height: 50,
+              width: 200,
+              color: Colors.white,
+              child: Text(
+                "GET STARTED",
+                style: TextStyle(
+                  fontSize: 30,
+                  color: Colors.green,
+                ),
               ),
             ),
           ),
