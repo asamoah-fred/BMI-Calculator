@@ -1,4 +1,4 @@
-// ignore_for_file: unnecessary_string_interpolations, must_be_immutable
+// ignore_for_file: unnecessary_string_interpolations
 
 import 'package:flutter/material.dart';
 import 'package:bmi_calculator/formula.dart';

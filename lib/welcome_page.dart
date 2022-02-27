@@ -21,7 +21,7 @@ class WelcomePage extends StatelessWidget {
           child: Column(
             children: [
               SizedBox(
-                height: 250,
+                height: 200,
               ),
               Center(
                 child: Image.asset(
@@ -31,7 +31,7 @@ class WelcomePage extends StatelessWidget {
                 ),
               ),
               const SizedBox(
-                height: 200,
+                height: 170,
               ),
               GestureDetector(
                 onTap: () {
