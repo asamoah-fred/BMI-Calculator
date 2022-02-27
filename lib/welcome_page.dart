@@ -20,7 +20,7 @@ class WelcomePage extends StatelessWidget {
         child: SingleChildScrollView(
           child: Column(
             children: [
-              SizedBox(
+              const SizedBox(
                 height: 200,
               ),
               Center(

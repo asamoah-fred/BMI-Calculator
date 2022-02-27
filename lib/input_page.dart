@@ -25,6 +25,7 @@ class _InputPageState extends State<InputPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      resizeToAvoidBottomInset: false,
       appBar: AppBar(
         backgroundColor: Color.fromRGBO(0, 10, 0, 10),
         title: const Text(
@@ -41,6 +42,7 @@ class _InputPageState extends State<InputPage> {
             child: Row(
               children: [
                 Expanded(
+                  flex: 1,
                   child: GestureDetector(
                     onTap: () {
                       setState(() {
@@ -121,68 +123,72 @@ class _InputPageState extends State<InputPage> {
           ),
           // This is the Second Row
           Expanded(
-            child: Row(
-              children: [
-                Expanded(
-                  child: Container(
-                    child: Column(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        Text(
-                          "HEIGHT",
-                          style: TextStyle(
-                            color: Colors.white,
-                            fontSize: 21,
-                          ),
-                        ),
-                        Row(
-                          crossAxisAlignment: CrossAxisAlignment.baseline,
-                          textBaseline: TextBaseline.alphabetic,
+            child: SafeArea(
+              child: Row(
+                children: [
+                  Expanded(
+                    child: Container(
+                      child: SingleChildScrollView(
+                        child: Column(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
                             Text(
-                              _currentSliderValue.toString(),
-                              style: TextStyle(
-                                color: Colors.white,
-                                fontSize: 75,
-                                fontWeight: FontWeight.bold,
-                              ),
-                            ),
-                            Text(
-                              "cm",
+                              "HEIGHT",
                               style: TextStyle(
                                 color: Colors.white,
                                 fontSize: 21,
                               ),
                             ),
+                            Row(
+                              crossAxisAlignment: CrossAxisAlignment.baseline,
+                              textBaseline: TextBaseline.alphabetic,
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              children: [
+                                Text(
+                                  _currentSliderValue.toString(),
+                                  style: TextStyle(
+                                    color: Colors.white,
+                                    fontSize: 75,
+                                    fontWeight: FontWeight.bold,
+                                  ),
+                                ),
+                                Text(
+                                  "cm",
+                                  style: TextStyle(
+                                    color: Colors.white,
+                                    fontSize: 21,
+                                  ),
+                                ),
+                              ],
+                            ),
+                            Slider(
+                              value: _currentSliderValue.toDouble(),
+                              min: 10,
+                              max: 255.0,
+                              // divisions: 10,
+                              // divisions: 20,
+                              // label: _currentSliderValue.round().toString(),
+                              onChanged: (value) {
+                                setState(
+                                  () {
+                                    _currentSliderValue = value.toInt();
+                                  },
+                                );
+                              },
+                              inactiveColor: Colors.white,
+                            ),
                           ],
                         ),
-                        Slider(
-                          value: _currentSliderValue.toDouble(),
-                          min: 10,
-                          max: 255.0,
-                          // divisions: 10,
-                          // divisions: 20,
-                          // label: _currentSliderValue.round().toString(),
-                          onChanged: (value) {
-                            setState(
-                              () {
-                                _currentSliderValue = value.toInt();
-                              },
-                            );
-                          },
-                          inactiveColor: Colors.white,
-                        ),
-                      ],
-                    ),
-                    margin: const EdgeInsets.all(10),
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(10),
-                      color: Color.fromRGBO(0, 10, 0, 10),
+                      ),
+                      // margin: const EdgeInsets.all(8),
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(10),
+                        color: Color.fromRGBO(0, 10, 0, 10),
+                      ),
                     ),
                   ),
-                ),
-              ],
+                ],
+              ),
             ),
           ),
           // This is Third Row
@@ -246,7 +252,7 @@ class _InputPageState extends State<InputPage> {
                         ),
                       ],
                     ),
-                    margin: const EdgeInsets.all(10),
+                    // margin: const EdgeInsets.all(10),
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(10),
                       color: Color.fromRGBO(0, 10, 0, 10),
@@ -310,7 +316,7 @@ class _InputPageState extends State<InputPage> {
                         ),
                       ],
                     ),
-                    margin: EdgeInsets.all(10),
+                    // margin: EdgeInsets.all(10),
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(10),
                       color: Color.fromRGBO(0, 10, 0, 10),
