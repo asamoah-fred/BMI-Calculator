@@ -31,6 +31,15 @@ class WelcomePage extends StatelessWidget {
                 ),
               ),
               const SizedBox(
+                height: 20,
+              ),
+              const Text('By: Asamoah Godfred',
+                  style: TextStyle(
+                    fontSize: 25,
+                    color: Colors.white,
+                    fontStyle: FontStyle.italic,
+                  )),
+              const SizedBox(
                 height: 170,
               ),
               GestureDetector(
@@ -44,9 +53,12 @@ class WelcomePage extends StatelessWidget {
                 },
                 child: Center(
                   child: Container(
-                    color: const Color.fromRGBO(0, 10, 0, 10),
                     width: 200,
                     height: 50,
+                    decoration: BoxDecoration(
+                      color: Color.fromARGB(246, 1, 31, 1),
+                      borderRadius: BorderRadius.circular(10),
+                    ),
                     child: const Center(
                       child: Text(
                         "GET STARTED",
