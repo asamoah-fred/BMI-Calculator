@@ -75,7 +75,7 @@ class _InputPageState extends State<InputPage> {
                         borderRadius: BorderRadius.circular(10),
                         color: selectedCard == Gender.male
                             ? Colors.cyan
-                            : Color.fromRGBO(0, 10, 0, 10),
+                            : Color.fromARGB(246, 1, 31, 1),
                       ),
                     ),
                   ),
@@ -113,7 +113,7 @@ class _InputPageState extends State<InputPage> {
                         borderRadius: BorderRadius.circular(10),
                         color: selectedCard == Gender.female
                             ? Colors.cyan
-                            : Color.fromRGBO(0, 10, 0, 10),
+                            : Color.fromARGB(246, 1, 31, 1),
                       ),
                     ),
                   ),
@@ -165,9 +165,6 @@ class _InputPageState extends State<InputPage> {
                               value: _currentSliderValue.toDouble(),
                               min: 10,
                               max: 255.0,
-                              // divisions: 10,
-                              // divisions: 20,
-                              // label: _currentSliderValue.round().toString(),
                               onChanged: (value) {
                                 setState(
                                   () {
@@ -180,10 +177,10 @@ class _InputPageState extends State<InputPage> {
                           ],
                         ),
                       ),
-                      // margin: const EdgeInsets.all(8),
+                      margin: const EdgeInsets.all(8),
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(10),
-                        color: Color.fromRGBO(0, 10, 0, 10),
+                        color: Color.fromARGB(246, 1, 31, 1),
                       ),
                     ),
                   ),
@@ -196,6 +193,7 @@ class _InputPageState extends State<InputPage> {
             child: Row(
               children: [
                 Expanded(
+                  flex: 1,
                   child: Container(
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.center,
@@ -221,21 +219,6 @@ class _InputPageState extends State<InputPage> {
                             GestureDetector(
                               onTap: () {
                                 setState(() {
-                                  weight++;
-                                });
-                              },
-                              child: CircleAvatar(
-                                backgroundColor: Colors.white,
-                                radius: 25,
-                                child: Icon(
-                                  FontAwesomeIcons.plus,
-                                  color: Color.fromRGBO(0, 10, 0, 10),
-                                ),
-                              ),
-                            ),
-                            GestureDetector(
-                              onTap: () {
-                                setState(() {
                                   weight--;
                                 });
                               },
@@ -244,7 +227,22 @@ class _InputPageState extends State<InputPage> {
                                 radius: 25,
                                 child: Icon(
                                   FontAwesomeIcons.minus,
-                                  color: Color.fromRGBO(0, 10, 0, 10),
+                                  color: Color.fromARGB(246, 1, 31, 1),
+                                ),
+                              ),
+                            ),
+                            GestureDetector(
+                              onTap: () {
+                                setState(() {
+                                  weight++;
+                                });
+                              },
+                              child: CircleAvatar(
+                                backgroundColor: Colors.white,
+                                radius: 25,
+                                child: Icon(
+                                  FontAwesomeIcons.plus,
+                                  color: Color.fromARGB(246, 1, 31, 1),
                                 ),
                               ),
                             ),
@@ -252,10 +250,10 @@ class _InputPageState extends State<InputPage> {
                         ),
                       ],
                     ),
-                    // margin: const EdgeInsets.all(10),
+                    margin: const EdgeInsets.all(10),
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(10),
-                      color: Color.fromRGBO(0, 10, 0, 10),
+                      color: Color.fromARGB(246, 1, 31, 1),
                     ),
                   ),
                 ),
@@ -285,21 +283,6 @@ class _InputPageState extends State<InputPage> {
                             GestureDetector(
                               onTap: () {
                                 setState(() {
-                                  age++;
-                                });
-                              },
-                              child: CircleAvatar(
-                                backgroundColor: Colors.white,
-                                radius: 25,
-                                child: Icon(
-                                  FontAwesomeIcons.plus,
-                                  color: Color.fromRGBO(0, 10, 0, 10),
-                                ),
-                              ),
-                            ),
-                            GestureDetector(
-                              onTap: () {
-                                setState(() {
                                   age--;
                                 });
                               },
@@ -308,7 +291,22 @@ class _InputPageState extends State<InputPage> {
                                 radius: 25,
                                 child: Icon(
                                   FontAwesomeIcons.minus,
-                                  color: Color.fromRGBO(0, 10, 0, 10),
+                                  color: Color.fromARGB(246, 1, 31, 1),
+                                ),
+                              ),
+                            ),
+                            GestureDetector(
+                              onTap: () {
+                                setState(() {
+                                  age++;
+                                });
+                              },
+                              child: CircleAvatar(
+                                backgroundColor: Colors.white,
+                                radius: 25,
+                                child: Icon(
+                                  FontAwesomeIcons.plus,
+                                  color: Color.fromARGB(246, 1, 31, 1),
                                 ),
                               ),
                             ),
@@ -316,10 +314,10 @@ class _InputPageState extends State<InputPage> {
                         ),
                       ],
                     ),
-                    // margin: EdgeInsets.all(10),
+                    margin: EdgeInsets.all(10),
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(10),
-                      color: Color.fromRGBO(0, 10, 0, 10),
+                      color: Color.fromARGB(246, 1, 31, 1),
                     ),
                   ),
                 ),
@@ -340,7 +338,7 @@ class _InputPageState extends State<InputPage> {
               );
             },
             child: Container(
-              color: Color.fromRGBO(0, 10, 0, 10),
+              color: Color.fromARGB(246, 1, 31, 1),
               width: double.infinity,
               height: 80,
               child: const Center(
