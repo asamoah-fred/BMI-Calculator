@@ -30,8 +30,18 @@ class WelcomePage extends StatelessWidget {
                   width: 120,
                 ),
               ),
+             const SizedBox(
+                height: 20,
+              ),
+
+             const Text('By: Asamoah Godfred',
+                  style: TextStyle(
+                    fontSize: 25,
+                    color: Colors.white,
+                    fontStyle: FontStyle.italic,
+                  )),
               const SizedBox(
-                height: 170,
+                height: 130,
               ),
               GestureDetector(
                 onTap: () {

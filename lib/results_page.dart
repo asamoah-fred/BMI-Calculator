@@ -38,8 +38,11 @@ class _ResultsPageState extends State<ResultsPage> {
       backgroundColor: Colors.black,
       body: Center(
         child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
+          // mainAxisAlignment: MainAxisAlignment.center,
           children: [
+            const SizedBox(
+              height: 150,
+            ),
             const Text(
               "BMI Result",
               style: TextStyle(
